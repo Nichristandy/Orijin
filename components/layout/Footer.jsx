@@ -8,7 +8,7 @@ const inter = Inter({
 const Footer = () => {
   return (
     <div>
-      <div className="w-full ">
+      <div className="w-full sticky z-10 ">
         <div className="flex flex-col bg-[#212B31] w-full">
           <div className="flex flex-col py-[30px] md:py-0  md:pl-[72px] md:pr-[120px] md:border-b border-amber-600 md:flex-row text-white md:pt-12 md:pb-[43px] items-center  justify-between">
             <img src="../../logo-putih.svg"></img>

@@ -22,15 +22,15 @@ export default function Home() {
     <div>
       <div className="w-full px-3 md:px-10 overflow-hidden md:overflow-auto">
         <div className="w-full flex flex-col bg-white border-r border-l border-amber-600 border-opacity-20">
-          {/* <div className="w-[1px] h-full bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div> */}
+          <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
           <Navbar />
           {/* Hero section */}
-          <div className="w-full h-[471px]  md:h-[600px] mt-8 lg:mt-4">
+          <div className="w-full  h-[471px]  md:h-[600px] mt-8 lg:mt-4">
             <img
               src="../Chair-1.png"
               className="ml-auto hidden md:block md:object w-auto h-[321px] md:h-[600px]  object-cover object-center"
             />
-            <div className=" md:-mt-[500px] ml-[18px] md:ml-[75px]">
+            <div className=" md:-mt-[500px] sticky z-10 ml-[18px] md:ml-[75px]">
               <h1
                 className={`text-amber-600 font-bold w-[257px] md:w-full text-2xl md:text-7xl bg-none uppercase ${rubik.className}`}
               >
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       {/* description */}
-      <div className="w-full md:px-10">
+      <div className="w-full sticky z-10 md:px-10">
         <div className="w-full flex flex-col bg-white md:border-r md:border-l md:border-amber-600 md:border-opacity-20">
           <div className="w-full md:px-8">
             <div className="w-full md:rounded-xl bg-[#212B31] md:pl-12">
@@ -217,7 +217,8 @@ export default function Home() {
             </div>
             {/* about */}
             <div className="px-3 w-full md:px-10">
-            <div className="w-full flex flex-col bg-white border-r border-l pt-[60px] px-[18px] md:px-[60px] md:pt-[150px] border-amber-600 border-opacity-20">
+            <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
+            <div className="w-full flex flex-col sticky z-10 bg-none  border-r border-l pt-[60px] px-[18px] md:px-[60px] md:pt-[150px] border-amber-600 border-opacity-20">
               <div className="flex flex-col  md:flex-row gap-[30px] md:gap-[120px] items-center w-full">
                 <div className="flex flex-col w-full md:w-1/2">
                   <h1
@@ -249,21 +250,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
             </div>
             {/* portfolio */}
             <div className="md:px-10">
-              <div className=" md:px-[42px] md:pb-[60px] md:pt-[150px] md:border-r md:border-l md:border-amber-600/20 w-full">
+            <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
+              <div className="sticky z-10 md:px-[42px] md:pb-[60px] md:pt-[150px] md:border-r md:border-l md:border-amber-600/20 w-full">
               <Carousel/>
               </div>
-
+            
             </div>
           
         
       
 
       {/* the journey */}
-      <div className="w-full bg-[#f8f8f8] px-[12px] md:px-10">
-        <div className="w-full flex flex-col md:flex-row items-center pt-[45px] md:pt-[90px] pb-[50px] md:pb-[150px] px-[18px] md:px-[60px] border-r border-l border-amber-600 border-opacity-20">
+      <div className="w-full sticky z-10  bg-[#f8f8f8] px-[12px] md:px-10">
+      <div className="w-[1px] h-[1500px] md:h-[1200px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
+        <div className="w-full sticky z-20 flex flex-col md:flex-row items-center pt-[45px] md:pt-[90px] pb-[50px] md:pb-[150px] px-[18px] md:px-[60px] border-r border-l border-amber-600 border-opacity-20">
           {/* sisi kiri */}
           <div className="w-full justify-center items-center md:items-baseline md:justify-normal text-center md:text-left md:w-1/2 flex flex-col">
             <h1

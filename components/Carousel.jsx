@@ -18,11 +18,14 @@ const Carousel = () => {
 
   const[curr, setCurr] = useState(0)
   const[isAnimating, setIsAnimating] = useState(false)
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   useEffect(() => {
     setIsAnimating(true);
     const timer = setTimeout(() => {
       setIsAnimating(false);
+
+      
     }, 500); // Set the animation duration in milliseconds
     return () => clearTimeout(timer);
   }, [curr]);
@@ -48,8 +51,18 @@ const Carousel = () => {
     },
   ]
 
-  const prev = () => setCurr((curr) => (curr === 0 ? data.length - 1 : curr-1))
-  const next = () => setCurr((curr) => (curr === data.length - 1 ? 0 : curr+1))
+  const prev = () =>{
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setCurr((curr) => (curr === 0 ? data.length - 1 : curr-1))
+    }
+  } 
+  const next = () =>{
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setCurr((curr) => (curr === data.length - 1 ? 0 : curr+1))
+    }
+  } 
   const currentItem = data[curr]
 
   return (
@@ -58,9 +71,9 @@ const Carousel = () => {
        <div className="hidden md:flex flex-row items-center w-full">
         {/* sisi kiri */}
 
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col w-5/12">
           <h1 className={`font-bold text-2xl ${rubik.className}`}>Portfolio</h1>
-          <div className={`flex flex-row items-center mt-14 ${isAnimating ? "opacity-0 ease-in-out duration-300" : "duration-500 ease-in-out opacity-100"} `}>
+          <div className={`flex flex-row items-center mt-14 ${isAnimating ? "opacity-0 ease-in-out" : "duration-500 ease-in-out opacity-100"} `}>
             <h1
               className={`font-bold text-3xl text-[#212B31]/50 ${rubik.className}`}
             >
@@ -71,31 +84,31 @@ const Carousel = () => {
           <div className="flex flex-col w-full mt-10">
             <h1
               className={`font-bold uppercase w-1/4 text-3xl ${
-                isAnimating ? "opacity-0 ease-in-out duration-300" : "duration-500 ease-in-out opacity-100"} ${rubik.className}`}
+                isAnimating ? "opacity-0 ease-in-out " : "duration-500 ease-in-out opacity-100"} ${rubik.className}`}
             >
               {currentItem.title}
             </h1>
             <p
               className={`text-black/50 w-[433px] mt-[38px] ${
-                isAnimating ? "opacity-0 ease-in-out duration-300" : "duration-500 ease-in-out opacity-100"} ${lato.className}`}
+                isAnimating ? "opacity-0 ease-in-out" : "duration-500 ease-in-out opacity-100"} ${lato.className}`}
             >
               {currentItem.description}
             </p>
           </div>
           <div className="flex flex-row w-1/4 gap-3 mt-12">
-            <button onClick={prev} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
+            <button onClick={prev} disabled={isAnimating} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
               <MdOutlineArrowBack className="w-[15px] h-[15px]" />
             </button>
-            <div onClick={next} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
+            <div onClick={next} disabled={isAnimating} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
               <MdOutlineArrowForward className="w-[15px] h-[15px]" />
             </div>
           </div>
         </div>
         {/* sisi kanan */}
-        <div className={`flex flex-col w-1/2 ${
-          isAnimating ? "opacity-0 ease-in-out " : "duration-500 ease-in-out opacity-100"}`}>
+        <div className={`flex flex-col w-7/12 ${
+          isAnimating ? "opacity-0 ease-in-out" : "duration-500 ease-in-out opacity-100"}`}>
           <img src={currentItem.image1} className="w-full h-auto"></img>
-          <div className="flex flex-row gap-6 mt-7">
+          <div className="flex flex-row gap-14 mt-7">
             <div className="w-1/3 h-auto">
               <img src={currentItem.image2}></img>
             </div>
@@ -110,7 +123,7 @@ const Carousel = () => {
       </div>
 
       {/* mobile */}
-      <div className="flex flex-col w-full justify-center items-center md:hidden">
+      <div className="flex flex-col sticky z-0 w-full justify-center items-center md:hidden">
         <div className="w-full px-3">
           <div className="w-full border-r border-l flex text-center justify-center pt-[30px] pb-4 border-amber-600/20">
           <h1
@@ -122,7 +135,8 @@ const Carousel = () => {
         </div>
 
 
-        <div className="w-full">
+        <div className={`w-full ${
+          isAnimating ? "opacity-0 ease-in-out" : "duration-500 ease-in-out opacity-100"}`}>
           <img src={currentItem.image1} className="w-full h-auto"></img>
         </div>
         <div className="w-full px-3">
@@ -139,8 +153,9 @@ const Carousel = () => {
         </div>
         </div>
 
-        <div className="w-full px-3">
-        <div className={`text-black/50 text-[13px] px-[18px] border-r border-l border-amber-600/20 text-center pt-[30px] pb-[75px]  ${lato.className}`}>
+        <div className="w-full  px-3">
+        <div className={`text-black/50 flex items-center justify-center text-[13px] px-[18px] border-r border-l border-amber-600/20 text-center pt-[30px] pb-[75px] ${
+          isAnimating ? "opacity-0 ease-in-out" : "duration-500 ease-in-out opacity-100"} ${lato.className}`}>
         <p className="w-[330px]">
           {currentItem.description}
         </p>  
