@@ -17,16 +17,16 @@ const Footer = () => {
                 <p>+62 21-2904-4395</p>
                 <p className="md:mt-3">hi@orijinsupremasi.id</p>
               </div>
-              <div className={`flex flex-col items-center md:items-baseline mt-[30px] md:mt-0 w-1/2 ${inter.className}`}>
+              <div className={`flex flex-col text-xs items-center md:items-baseline mt-[30px] md:mt-0 w-[57%] md:w-1/2 ${inter.className}`}>
                 <p className="font-bold">Graha Sumartadinata</p>
-                <p className="w-10/12 md:w-9/12">
+                <p className="w-full md:w-9/12">
                   Jl Ciputat Raya No.102, Kebayoran Lama Jakarta Selatan, DKI
                   Jakarta 122040
                 </p>
               </div>
             </div>
           </div>
-          <div className="w-full pl-[72px] pt-6 pb-[30px] text-white">
+          <div className="w-full text-[12px] md:text-base pl-[72px] pt-6 pb-[30px] text-white">
             <p>
             © 2023 by ORIGIN, PT Orijin Supremasi Ventura
             </p>

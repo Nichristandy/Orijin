@@ -20,7 +20,7 @@ const lato = Lato({
 export default function Home() {
   return (
     <div>
-      <div className="w-full px-10 overflow-hidden md:overflow-auto">
+      <div className="w-full px-3 md:px-10 overflow-hidden md:overflow-auto">
         <div className="w-full flex flex-col bg-white border-r border-l border-amber-600 border-opacity-20">
           {/* <div className="w-[1px] h-full bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div> */}
           <Navbar />
@@ -50,7 +50,7 @@ export default function Home() {
                   src="../Chair-1.png"
                   className="ml-auto md:hidden -mt-[50px] object w-auto h-[321px] md:h-[600px]  object-cover bg-cover bg-clip-content object-center"
                 />
-                <div className="w-1/2 md:w-1/2 sticky z-10   -mt-64 lg:-mt-0">
+                <div className="w-7/12 md:w-1/2 sticky z-10   -mt-64 lg:-mt-0">
                   <EmailInput />
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
                 <div className=" flex flex-col w-full lg:w-3/5">
                   <div className="w-full flex items-center md:justify-normal px-[30px] pt-[60px] pb-[30px] md:pl-8 md:pr-12 md:py-[75px] border-b border-b-amber-600">
                     <h1
-                      className={`w-3/4 md:w-full uppercase font-bold text-lg md:text-4xl font-rubik text-white ${rubik.className}`}
+                      className={`w-[95%] md:w-full uppercase font-bold text-lg md:text-4xl font-rubik text-white ${rubik.className}`}
                     >
                       stirs <span className="text-amber-600">emotions</span> and{" "}
                       <span className="text-amber-600">embraces</span> the
@@ -146,7 +146,7 @@ export default function Home() {
                       }
                     >
                       <div className="w-full md:w-1/2 md flex justify-start md:justify-normal">
-                      <div className="w-7/12 justify-self-start md:justify-self-auto md:w-[400px] flex flex-col">
+                      <div className="w-[90%] justify-self-start md:justify-self-auto md:w-[400px] flex flex-col">
                         <span className="font-bold text-white w-full">
                           Our origin made of.
                         </span>
@@ -158,7 +158,7 @@ export default function Home() {
                       </div>
                       </div>
                       <div className="w-full md:w-1/2 mt-[60px] md:mt-0 flex justify-end md:justify-normal">
-                      <div className="w-8/12 text-right md:text-left md:w-[400px] flex flex-col">
+                      <div className="w-[90%] text-right md:text-left md:w-[400px] flex flex-col">
                         <span className="font-bold w-full text-white text-base">
                           Sculpting the origin
                         </span>
@@ -170,11 +170,11 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="w-full md:w-1/2 mt-[60px] md:hidden flex justify-start md:justify-normal">
-                      <div className="w-8/12 justify-self-start md:justify-self-auto md:w-[400px] flex flex-col">
+                      <div className="w-[90%] justify-self-start md:justify-self-auto md:w-[400px] flex flex-col">
                         <span className="font-bold text-white w-full">
                         Progressive work that stands out for its simplicity.
                         </span>
-                        <p className="mt-8 w-11/12 text-[#71777b]">
+                        <p className="mt-8 w-10/12 text-[#71777b]">
                         We really pay attention to every element that is
                           applied in a design, from material, texture, shape, to
                           function. We believe every aspect has its own
@@ -184,13 +184,14 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="w-full flex flex-row">
                     <div className="w-8/12 border-r border-r-amber-600 hidden md:flex pl-8 pt-8 pb-12 justify-start">
-                      <div className="flex w-[356px] flex-col font-lato">
+                      <div className="flex w-10/12 flex-col font-lato">
                         <span className="font-bold w-full text-white text-base">
                           Progressive work that stands out for its simplicity.
                         </span>
-                        <p className="mt-6 w-full text-[#71777b] text-base">
+                        <p className="mt-6 w-[85%] text-[#71777b] text-base">
                           We really pay attention to every element that is
                           applied in a design, from material, texture, shape, to
                           function. We believe every aspect has its own
@@ -211,9 +212,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            </div>
+            </div>
+            </div>
             {/* about */}
-            <div className="px-3 md:px-15 w-full md:mt-[150px]">
-            <div className="w-full flex flex-col bg-white border-r border-l pt-[60px] px-[18px] md:px-0 md:pt-0 border-amber-600 border-opacity-20">
+            <div className="px-3 w-full md:px-10">
+            <div className="w-full flex flex-col bg-white border-r border-l pt-[60px] px-[18px] md:px-[60px] md:pt-[150px] border-amber-600 border-opacity-20">
               <div className="flex flex-col  md:flex-row gap-[30px] md:gap-[120px] items-center w-full">
                 <div className="flex flex-col w-full md:w-1/2">
                   <h1
@@ -247,15 +251,15 @@ export default function Home() {
             </div>
             </div>
             {/* portfolio */}
-            <div className="mt-[150px]">
-              <div className="md:px-[42px] md:pb-[60px] w-full">
+            <div className="md:px-10">
+              <div className=" md:px-[42px] md:pb-[60px] md:pt-[150px] md:border-r md:border-l md:border-amber-600/20 w-full">
               <Carousel/>
               </div>
 
             </div>
-          </div>
-        </div>
-      </div>
+          
+        
+      
 
       {/* the journey */}
       <div className="w-full bg-[#f8f8f8] px-[12px] md:px-10">
@@ -267,22 +271,22 @@ export default function Home() {
             >
               The Journey
             </h1>
-            <p className={`md:ml-[5px]text-[13px] md:text-base mt-[30px] md:mt-8 opacity-50 md:w-[85%] ${lato.className}`}>
+            <p className={`md:ml-[5px] text-[13px] md:text-base mt-[30px] md:mt-8 opacity-50 md:w-[85%] ${lato.className}`}>
               With every project, we strive to create an environment that
               engages, sparks conversation, and fosters connection—a space where
               words may be absent, but the language of design speaks volumes.
             </p>
             <img
               src="../journey-photo.png"
-              className="w-[430px] h-[430px] md:w-[610px] md:h-[617px] mt-[30px] md:mt-[35px]"
+              className="w-[430px] h-auto md:w-[610px] md:h-[617px] mt-[30px] md:mt-[35px]"
             ></img>
           </div>
           {/* sisi kanan */}
-          <div className="w-full md:w-1/2 flex flex-col gap-10 items-center">
+          <div className="w-full mt-[30px] md:mt-0 md:w-1/2 flex flex-col gap-10 items-center">
             {/* the paper */}
             <div className="flex flex-col w-full md:w-[600px]">
               <div className="flex flex-row w-full items-center md:justify-normal">
-              <h1 className={`text-2xl w-1/2 md:w-full uppercase font-bold ${rubik.className}`}>
+              <h1 className={`text-2xl w-full uppercase font-bold ${rubik.className}`}>
                 THE PAPER
               </h1> 
               <div className={`md:hidden flex w-1/2 items-end opacity-50  ${lato.className}`}>
@@ -296,7 +300,7 @@ export default function Home() {
                 <div className="hidden md:flex w-1/2">
                   <p>Briefing</p>
                 </div>
-                <div className="w-10/12 md:w-1/2">
+                <div className="w-10/12 text-[13px] md:text-base md:w-1/2">
                   <p>
                     A complete design brief advisory is where we work with you
                     to build a detailed brief and identify your design
@@ -308,7 +312,7 @@ export default function Home() {
             {/* Concept Creation */}
             <div className="flex flex-col w-full md:w-[600px]">
             <div className="flex flex-row w-full items-center md:justify-normal">
-              <h1 className={`text-2xl uppercase w-1/2 md:w-full font-bold ${rubik.className}`}>
+              <h1 className={`text-2xl uppercase w-full font-bold ${rubik.className}`}>
                 Concept Creation
               </h1>
               <div className={`md:hidden flex w-1/2 items-end opacity-50  ${lato.className}`}>
@@ -322,7 +326,7 @@ export default function Home() {
                 <div className="hidden md:flex w-1/2">
                   <p>Brainstorming</p>
                 </div>
-                <div className="w-10/12 md:w-1/2">
+                <div className="w-10/12 text-[13px] md:text-base md:w-1/2">
                   <p>
                     We bring the best ideas and solutions beyond the
                     posibillities to the table. As we begin to investigate
@@ -347,7 +351,7 @@ export default function Home() {
                 <div className="hidden md:flex w-1/2">
                   <p>Designing</p>
                 </div>
-                <div className="w-10/12 md:w-1/2">
+                <div className="w-10/12 text-[13px] md:text-base md:w-1/2">
                   <p>
                     Once you decided the concept, we will continue to observe
                     the best components to suit your preferences.
@@ -371,7 +375,7 @@ export default function Home() {
                 <div className="hidden md:flex w-1/2">
                   <p>Development</p>
                 </div>
-                <div className="w-10/12 md:w-1/2">
+                <div className="w-10/12 text-[13px] md:text-base md:w-1/2">
                   <p>
                     Our professionals will craft the rest of design once to
                     shape those materials.
@@ -395,7 +399,7 @@ export default function Home() {
                 <div className="hidden md:flex w-1/2">
                   <p>Delivery</p>
                 </div>
-                <div className="w-10/12 md:w-1/2">
+                <div className="w-10/12 text-[13px] md:text-base md:w-1/2">
                   <p>
                     We will deliver the nutshell of our journey along with the
                     complete guide for your developments

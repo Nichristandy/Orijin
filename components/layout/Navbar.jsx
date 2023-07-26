@@ -28,7 +28,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="inline-flex items-center justify-center p-2 rounded-md text-[#DF7A20] focus:outline-none focus:ring-offset-2 focus:ring-offset-[#DF7A20] focus:ring-[#DF7A20]"
+            className="inline-flex items-center justify-center rounded-md text-[#DF7A20] focus:outline-none focus:ring-offset-2 focus:ring-offset-[#DF7A20] focus:ring-[#DF7A20]"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
