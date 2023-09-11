@@ -20,9 +20,9 @@ const Navbar = () => {
         <div
           className={`hidden lg:flex flex-row w-2/6 font-bold text-lg pr-[35px] justify-between ${lato.className}`}
         >
-          <div>About Us</div>
-          <div>Our Service</div>
-          <div>Portfolios</div>
+          <Link href={"#about"}>About Us</Link>
+          <Link href={"#services"}>Our Service</Link>
+          <Link href={"#portfolio"}>Portfolios</Link>
         </div>
         <div className=" flex p-3  lg:hidden">
           <button
@@ -88,7 +88,7 @@ const Navbar = () => {
               className=" pt-2 pb-3 flex flex-col  justify-center space-y-1 sm:px-3"
             >
               <Link
-                href="/"
+                href=""
                 className="p-4 bg-white shadow-sm hover:text-white hover:bg-[#212B31] text-center text-lg"
               >
                 About us

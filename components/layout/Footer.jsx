@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full text-[12px] md:text-base pl-[72px] pt-6 pb-[30px] text-white">
+          <div className="w-full text-[12px] text-center md:text-left md:text-base md:pl-[72px] pt-6 pb-[30px] text-white">
             <p>
             © 2023 by ORIGIN, PT Orijin Supremasi Ventura
             </p>
