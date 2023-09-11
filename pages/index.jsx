@@ -19,7 +19,7 @@ const lato = Lato({
 
 export default function Home() {
   return (
-    <div className="w-full max-w-screen md:max-w-screen-lg">
+    <div className="w-full max-w-screen-sm md:max-w-screen-lg">
       <div className="w-full px-3 md:px-10 overflow-hidden md:overflow-auto">
         <div className="w-full flex flex-col bg-white border-r border-l border-amber-600 border-opacity-20">
           <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
