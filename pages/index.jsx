@@ -19,7 +19,7 @@ const lato = Lato({
 
 export default function Home() {
   return (
-    <div className="w-full max-w-screen-sm md:max-w-screen-lg">
+    <div className="w-full">
       <div className="w-full px-3 md:px-10 overflow-hidden md:overflow-auto">
         <div className="w-full flex flex-col bg-white border-r border-l border-amber-600 border-opacity-20">
           <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
@@ -112,7 +112,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="flex flex-row mt-8 lg:w-10/12 items-center justify-between">
+                    <div className="flex flex-row mt-8 md:w-10/12 items-center justify-between">
                       <div className="flex flex-row space-x-2">
                         <img
                           src="../arrow-orange.svg"
@@ -131,7 +131,7 @@ export default function Home() {
                   </div>
                 </div>
                 {/* sisi kanan */}
-                <div className=" flex flex-col w-full lg:w-3/5">
+                <div className=" flex flex-col w-full md:w-3/5">
                   <div className="w-full flex items-center md:justify-normal px-[30px] pt-[60px] pb-[30px] md:pl-8 md:pr-12 md:py-[75px] border-b border-b-amber-600">
                     <h1
                       className={`w-[95%] md:w-full uppercase font-bold text-lg md:text-4xl font-rubik text-white ${rubik.className}`}
