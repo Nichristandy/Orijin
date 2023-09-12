@@ -221,7 +221,7 @@ export default function Home() {
             <div id="services" className="px-3 w-full md:px-10">
             <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
             <div className="w-full flex flex-col sticky z-10 bg-none  border-r border-l pt-[60px] px-[18px] md:px-[60px] md:pt-[150px] border-amber-600 border-opacity-20">
-              <div className="flex flex-col  md:flex-row gap-[30px] lg:gap-[120px] items-center w-full">
+              <div className="flex flex-col  md:flex-row gap-[30px] md:gap-[120px] items-center w-full">
                 <div className="flex flex-col w-full md:w-1/2">
                   <h1
                     className={`font-bold uppercase text-2xl md:text-4xl w-3/4 md:w-[423px] md:ml-5 ${rubik.className}`}
