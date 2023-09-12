@@ -28,7 +28,7 @@ export default function Home() {
           <div className="w-full  h-[471px]  md:h-[600px] mt-8 lg:mt-4">
             <img
               src="../Chair-1.png"
-              className="ml-auto hidden md:block md:object w-auto h-[321px] md:h-[600px]  object-cover object-center"
+              className="ml-auto hidden md:block md:object w-auto md:h-[321px] lg:h-[600px]  object-cover object-center"
             />
             <div className=" md:-mt-[500px] sticky z-10 ml-[18px] md:ml-[75px]">
               <span
@@ -269,7 +269,7 @@ export default function Home() {
       {/* the journey */}
       <div className="w-full sticky z-10  bg-[#f8f8f8] px-[12px] md:px-10">
       <div className="w-[1px] h-[1500px] md:h-[1200px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
-        <div className="w-full sticky z-20 flex flex-col md:gap-5 md:flex-row items-center pt-[45px] md:pt-[90px] pb-[50px] md:pb-[150px] px-[18px] md:px-[3,75rem] border-r border-l border-amber-600 border-opacity-20">
+        <div className="w-full sticky z-20 flex flex-col lg:gap-5 md:flex-row items-center pt-[45px] md:pt-[90px] pb-[50px] md:pb-[150px] px-[18px] md:px-[3,75rem] border-r border-l border-amber-600 border-opacity-20">
           {/* sisi kiri */}
           <div className="w-full justify-center items-center md:items-baseline md:justify-normal text-center md:text-left md:w-1/2 flex flex-col">
             <h1
