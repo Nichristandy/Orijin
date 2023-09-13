@@ -9,13 +9,13 @@ const lato = Lato({
 
 const EmailInput = () => {
   return (
-    <div className="w-4/5 md:w-1/2 flex flex-row items-center justify-center bg-[#DF7A20]   md:bg-[#F6F6F6] p-2 md:p-4">
+    <div className="w-4/5 md:w-1/2 flex flex-row items-center justify-center bg-[#DF7A20]   lg:bg-[#F6F6F6] p-2 lg:p-4">
       <input
         type="text"
         placeholder="Enter your email"
-        className=" bg-transparent hidden md:flex focus:outline-0 w-full h-full placeholder-white md:placeholder-slate-400 placeholder:text-[13px] placeholder:md:text-base"
+        className=" bg-transparent hidden lg:flex focus:outline-0 w-full h-full placeholder-white lg:placeholder-slate-400 placeholder:text-[13px] placeholder:lg:text-base"
       />
-      <div className={`flex md:hidden text-white font-bold text-[13px] ${lato.className}`}>
+      <div className={`flex lg:hidden text-white font-bold text-[13px] ${lato.className}`}>
         <p>Request an email</p>
 
       </div>

@@ -25,17 +25,17 @@ export default function Home() {
           <div className="w-[1px] h-[1000px] bg-[#DF7A20] opacity-20 absolute left-[50%] z-0"></div>
           <Navbar />
           {/* Hero section */}
-          <div className="w-full  h-[471px]  md:h-[600px] mt-8 lg:mt-4">
+          <div className="w-full  h-[471px]  lg:h-[600px] mt-8 lg:mt-4">
             <img
               src="../Chair-1.png"
-              className="ml-auto hidden md:block md:object w-auto md:h-[321px] lg:h-[600px]  object-cover object-center"
+              className="ml-auto hidden lg:block lg:object w-auto lg:h-[600px]  object-cover object-center"
             />
-            <div className=" md:-mt-[500px] sticky z-10 ml-[18px] md:ml-[75px]">
+            <div className="md:mt-10 lg:-mt-[500px] sticky z-10 ml-[18px] md:ml-[75px]">
               <span
-                className={`font-bold w-[257px] md:w-full text-2xl md:text-7xl bg-none uppercase ${rubik.className}`}
+                className={`font-bold w-[257px] md:w-full text-2xl md:text-4xl lg:text-7xl bg-none uppercase ${rubik.className}`}
               >
                 An environment               <span
-                className={`text-amber-600 font-bold w-[257px] md:w-full text-2xl md:text-7xl bg-none uppercase ${rubik.className}`}
+                className={`text-amber-600 font-bold w-[257px] md:w-full text-2xl md:text-4xl lg:text-7xl bg-none uppercase ${rubik.className}`}
               >that speaks</span>
               </span>
               <div
@@ -50,7 +50,7 @@ export default function Home() {
               <div className="mt-8">
                 <img
                   src="../Chair-1.png"
-                  className="ml-auto md:hidden -mt-[50px] object w-auto h-[321px] md:h-[600px]  object-cover bg-cover bg-clip-content object-center"
+                  className="ml-auto lg:hidden -mt-[50px] md:-mt-[120px] object w-auto h-[321px] md:h-[400px] lg:h-[600px]  object-cover bg-cover bg-clip-content object-center"
                 />
                 <div className="w-7/12 md:w-1/2 sticky z-10   -mt-64 lg:-mt-0">
                   <EmailInput />
@@ -342,7 +342,7 @@ export default function Home() {
               </div>
             </div>
             {/* Round Table */}
-            <div className="flex flex-col w-full md:w-1/2 lg:w-[600px]">
+            <div className="flex flex-col w-full md:w-[600px]">
             <div className="flex flex-row w-full items-center md:justify-normal">
             <h1 className={`text-2xl uppercase w-3/4 md:w-full font-bold ${rubik.className}`}>
                 Round Table

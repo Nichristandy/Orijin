@@ -33,12 +33,12 @@ const Carousel = () => {
   const data =[
     {
       id: 1,
-      title: 'Project Name',
+      title: 'CIMB Niaga',
       description: "Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.",
-      image1:"../portfolio/picture-1.png",
-      image2: "../portfolio/picture-2.png",
-      image3: "../portfolio/picture-3.png",
-      image4: "../portfolio/picture-4.png"
+      image1:"../portfolio/CIMB-1.png",
+      image2: "../portfolio/CIMB-2.png",
+      image3: "../portfolio/CIMB-3.png",
+      image4: "../portfolio/CIMB-4.png"
     },
         {
       id: 2,
@@ -96,11 +96,11 @@ const Carousel = () => {
             </p>
           </div>
           <div className="flex flex-row w-1/4 gap-3 mt-12">
-            <button onClick={prev} disabled={isAnimating} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
+            <button onClick={prev} disabled={isAnimating} className="bg-none cursor-pointer text-amber-600 border-amber-600 border rounded-full p-3 active:border-amber-300 active:text-amber-300">
               <MdOutlineArrowBack className="w-[15px] h-[15px]" />
             </button>
-            <div onClick={next} disabled={isAnimating} className="bg-none text-amber-600 border-amber-600 border rounded-full p-3">
-              <MdOutlineArrowForward className="w-[15px] h-[15px]" />
+            <div onClick={next} disabled={isAnimating} className="bg-none cursor-pointer text-amber-600 border-amber-600 border rounded-full p-3 active:border-amber-300 active:text-amber-300">
+              <MdOutlineArrowForward className="w-[15px] h-[15px] " />
             </div>
           </div>
         </div>
