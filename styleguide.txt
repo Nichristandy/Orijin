@@ -1,0 +1,25 @@
+Color : 
+    Primary: #DF7A20
+    Secondary: #212B31
+
+Font: 
+    Rubik - Heading
+    Lato - body
+    footer - inter
+
+Font size :
+    Desktop:
+        Heading 1 : 72px
+        Heading 2 : 36px
+        Heading 3 : 24px
+        body : 16px
+
+    Tab:
+        Heading 1 : 48px
+        Heading 2 : 24px
+        body : 16px
+
+    Mobile : 
+        Heading 1 : 24px
+        Heading 2 : 18px
+        body : 16px
