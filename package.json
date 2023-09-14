@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "website-v2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.15",
-    "autoprefixer": "10.4.14",
-    "next": "13.4.10",
-    "postcss": "8.4.26",
+    "@headlessui/react": "^1.7.17",
+    "autoprefixer": "10.4.15",
+    "next": "13.4.19",
+    "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
-    "react-responsive-carousel": "^3.2.23",
+    "react-icons": "^4.11.0",
     "tailwindcss": "3.3.3"
   }
 }
