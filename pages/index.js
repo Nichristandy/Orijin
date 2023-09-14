@@ -1,4 +1,4 @@
-import Carousel from "@/Components/Carousel";
+import Carousel from "@/components/Carousel";
 import EmailInput from "@/Components/EmailInput";
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
