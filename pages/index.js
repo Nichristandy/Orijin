@@ -1,4 +1,6 @@
+import Carousel from "@/Components/Carousel";
 import EmailInput from "@/Components/EmailInput";
+import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import { Rubik, Lato } from "next/font/google";
 
@@ -15,7 +17,8 @@ const lato = Lato({
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen overflow-x-hidden">
+      <div className="w-[1px] h-full bg-[#DF7A20] opacity-20 mx-auto left-[50%] absolute -z-10"></div>
       {/* hero section */}
       <div className="w-full px-3 md:px-5 lg:px-10 ">
         <div className="w-full h-full border-r border-l border-primary border-opacity-20">
@@ -237,6 +240,111 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Services */}
+      <div className="w-full px-3 md:px-5 lg:px-10 ">
+      <div className="w-full  h-full border-r border-l border-primary border-opacity-20 py-[60px] px-[18px] md:px-[30px] md:py-[75px] lg:py-[150px] lg:px-[60px]">
+        <div className="flex flex-col gap-[30px] md:flex-row md:items-start md:gap-16 lg:gap-[120px]">
+            <div className="flex flex-col w-full gap-[30px] md:w-1/2 md:gap-6 lg:gap-12">
+                <h1 className={`font-bold text-secondary text-2xl  w-full uppercase md:pl-5 lg:w-3/4 lg:text-4xl ${rubik.className}`}>Interior & Furniture Design</h1>
+                <div className="flex flex-col gap-[30px] md:gap-6">
+                    <img src="../picture-1.png" className="h-auto lg:w-auto"/>
+                    <span className={`text-black opacity-50 lg:pl-5 ${lato.className}`}>We focus on interior design in simplifying designs with complex measurements on multiple layers of planes, we believe every side in shape has a great opportunity beyond it</span>
+                </div>
+            </div>
+            <div className="flex flex-col w-full gap-[30px] md:w-1/2 md:gap-6 lg:gap-12">
+                <h1 className={`font-bold text-secondary  text-2xl w-full uppercase md:pl-5 lg:w-3/4  lg:text-4xl ${rubik.className}`}>Mechanical and Electrical Design</h1>
+                <div className="flex flex-col gap-[30px] md:gap-6">
+                    <img src="../picture-2.png" className="h-auto lg:w-auto"/>
+                    <span className={`text-black opacity-50 md:pl-5 ${lato.className}`}>Various technologies and systems operating in design Analyzing and evaluating system options in the con- are integrated with the building architecture while optimizing building owner investment.</span>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      </div>
+      {/* Portfolio */}
+      <div className="w-full md:px-5  lg:px-10">
+        <div className="border-r border-l border-opacity-20 border-primary md:pb-[30px] lg:pb-[60px] md:px-6 lg:px-[42px]">
+          <Carousel/>
+        </div>
+      </div>
+      {/* The journey */}
+      <div className="w-full bg-[#f8f8f8] px-3 md:px-5 lg:px-10 ">
+          <div className="border-r border-l w-full border-primary border-opacity-20 px-[18px]  pb-[75px] pt-[45px] lg:pt-[90px] lg:pb-[150px] lg:px-[60px]">
+            <div className="w-full flex flex-col gap-[30px]  md:flex-row md:gap-[60px] lg:gap-[120px]">
+              {/* sisi kiri */}
+              <div className="w-full md:w-1/2 flex flex-col gap-[30px] items-center md:items-start text-center md:text-left   md:gap-4 lg:gap-8">
+                <h1 className={`text-secondary font-bold uppercase text-2xl lg:text-4xl ${rubik.className}`}>The Journey</h1>
+                <div className={`flex flex-col text-black gap-[30px] lg:gap-[35px] ${lato.className}`}>
+                  <span className="opacity-50 text-center w-full text-xs md:text-base md:text-left md:w-[90%]">With every project, we strive to create an environment that engages, sparks conversation, and fosters connection—a space where words may be absent, but the language of design speaks volumes.</span>
+                  <img src="../journey-photo.png" className="w-auto h-auto"></img>
+                </div>
+              </div>
+              {/* sisi kanan */}
+              <div className="w-full md:w-1/2 flex flex-col gap-10">
+                {/* The paper */}
+                <div className="flex flex-col gap-[26px]">
+                  <div className="w-full flex flex-row justify-between md:gap-0">
+                    <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>The paper</h1>
+                    <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Briefing</span>
+                  </div> 
+                  <div className={` flex flex-row text-black items-start opacity-50 w-full text-left text-xs md:text-base md:gap-3 ${lato.className}`}>
+                    <span className="w-1/2 hidden lg:flex">Briefing</span>
+                    <span className="w-full lg:w-1/2">A complete design brief advisory is where we work with you to build a detailed brief and identify your design preferences.</span>
+                  </div>
+                </div>
+                {/* Concept Creation   */}
+                <div className="flex flex-col gap-[26px]">
+                  <div className="w-full flex flex-row justify-between md:gap-0">
+                    <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>Concept Creation</h1>
+                    <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Brainstorming</span>
+                  </div> 
+                  <div className={` flex flex-row text-black items-start opacity-50 w-full text-left text-xs md:text-base md:gap-3 ${lato.className}`}>
+                    <span className="w-1/2 hidden lg:flex">Brainstorming</span>
+                    <span className="w-full lg:w-1/2">We bring the best ideas and solutions beyond the posibillities to the table. As we begin to investigate finishes, design styles and influences.</span>
+                  </div>
+                </div>
+                {/* Round table */}
+                <div className="flex flex-col gap-[26px]">
+                  <div className="w-full flex flex-row justify-between md:gap-0">
+                    <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>Round table</h1>
+                    <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Designing</span>
+                  </div> 
+                  <div className={` flex flex-row text-black items-start opacity-50 w-full text-left text-xs md:text-base md:gap-3 ${lato.className}`}>
+                    <span className="w-1/2 hidden lg:flex">Designing</span>
+                    <span className="w-full lg:w-1/2">Once you decided the concept, we will continue to observe the best components to suit your preferences.</span>
+                  </div>
+                </div>
+                {/* Garage */}
+                <div className="flex flex-col gap-[26px]">
+                  <div className="w-full flex flex-row justify-between md:gap-0">
+                    <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>Garage</h1>
+                    <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Development</span>
+                  </div> 
+                  <div className={` flex flex-row text-black items-start opacity-50 w-full text-left text-xs md:text-base md:gap-3 ${lato.className}`}>
+                    <span className="w-1/2 hidden lg:flex">Development</span>
+                    <span className="w-full lg:w-1/2">Our professionals will craft the rest of design once to shape those materials.</span>
+                  </div>
+                </div>
+                {/* Package */}
+                <div className="flex flex-col gap-[26px]">
+                  <div className="w-full flex flex-row justify-between md:gap-0">
+                    <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>package</h1>
+                    <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Delivery</span>
+                  </div> 
+                  <div className={` flex flex-row items-start text-black opacity-50 w-full text-left text-xs md:text-base md:gap-3 ${lato.className}`}>
+                    <span className="w-1/2 hidden lg:flex">Delivery</span>
+                    <span className="w-full lg:w-1/2">We will deliver the nutshell of our journey along with the complete guide for your developments</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+      {/* footer */}
+      <Footer/> 
     </div>
   );
 }
