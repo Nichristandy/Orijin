@@ -1,7 +1,8 @@
-import Carousel from "@/components/Carousel";
+
 import EmailInput from "@/Components/EmailInput";
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
+import Carousel from "@/components/Carousel";
 import { Rubik, Lato } from "next/font/google";
 
 const rubik = Rubik({
