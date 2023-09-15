@@ -2,7 +2,7 @@
 import EmailInput from "@/Components/EmailInput";
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/Components/Carousel";
 import { Rubik, Lato } from "next/font/google";
 
 const rubik = Rubik({
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       {/* description */}
-      <div className="w-full md:px-5 lg:px-10 ">
+      <div id="about" className="w-full md:px-5 lg:px-10 ">
         <div className="w-full  h-full border-r border-l border-primary border-opacity-20  md:px-4 lg:px-8">
           {/* desktop */}
           <div className="bg-secondary rounded-[20px] hidden md:flex">
@@ -242,7 +242,7 @@ export default function Home() {
         </div>
       </div>
       {/* Services */}
-      <div className="w-full px-3 md:px-5 lg:px-10 ">
+      <div id="services" className="w-full px-3 md:px-5 lg:px-10 ">
       <div className="w-full  h-full border-r border-l border-primary border-opacity-20 py-[60px] px-[18px] md:px-[30px] md:py-[75px] lg:py-[150px] lg:px-[60px]">
         <div className="flex flex-col gap-[30px] md:flex-row md:items-start md:gap-16 lg:gap-[120px]">
             <div className="flex flex-col w-full gap-[30px] md:w-1/2 md:gap-6 lg:gap-12">
@@ -264,13 +264,13 @@ export default function Home() {
       </div>
       </div>
       {/* Portfolio */}
-      <div className="w-full md:px-5  lg:px-10">
+      <div id="portfolio" className="w-full md:px-5  lg:px-10">
         <div className="border-r border-l border-opacity-20 border-primary md:pb-[30px] lg:pb-[60px] md:px-6 lg:px-[42px]">
           <Carousel/>
         </div>
       </div>
       {/* The journey */}
-      <div className="w-full bg-[#f8f8f8] px-3 md:px-5 lg:px-10 ">
+      <div className="w-full bg-[#f8f8f8] px-3 md:px-5 lg:px-10 relative -z-20">
           <div className="border-r border-l w-full border-primary border-opacity-20 px-[18px]  pb-[75px] pt-[45px] lg:pt-[90px] lg:pb-[150px] lg:px-[60px]">
             <div className="w-full flex flex-col gap-[30px]  md:flex-row md:gap-[60px] lg:gap-[120px]">
               {/* sisi kiri */}
@@ -307,6 +307,7 @@ export default function Home() {
                 </div>
                 {/* Round table */}
                 <div className="flex flex-col gap-[26px]">
+                  
                   <div className="w-full flex flex-row justify-between md:gap-0">
                     <h1 className={`font-bold text-secondary uppercase  text-lg md:w-full lg:text-2xl ${rubik.className}`}>Round table</h1>
                     <span className={`text-black opacity-50 flex text-right lg:hidden ${lato.className}`}>Designing</span>

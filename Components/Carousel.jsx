@@ -34,7 +34,7 @@ const Carousel = () => {
     {
       id: 1,
       title: 'CIMB Niaga',
-      description: "Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.Collaboration is at the heart of our agency. We foster open communication, embracing the ideas and input of our clients throughout the design process.",
+      description: "Our collaboration with CIMB Niaga, a prominent financial institution, underscores our unwavering commitment to excellence. We had the privilege of partnering with CIMB Niaga to transform their office space, aligning it with their core values while fostering creativity and boosting productivity. This project serves as a testament to our capacity to comprehend and fulfill our clients' distinct requirements, regardless of project scale or complexity.",
       image1:"./portfolio/CIMB-1.png",
       image2: "./portfolio/CIMB-2.png",
       image3: "./portfolio/CIMB-3.png",
