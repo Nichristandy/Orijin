@@ -37,6 +37,7 @@ const Carousel = () => {
       image2: "./portfolio/CIMB-2.png",
       image3: "./portfolio/CIMB-3.png",
       image4: "./portfolio/CIMB-4.png",
+      status: true,
     },
     {
       id: 2,
@@ -47,6 +48,18 @@ const Carousel = () => {
       image2: "../portfolio/barrier-gate-2.svg",
       image3: "../portfolio/barrier-gate-3.svg",
       image4: "../portfolio/barrier-gate-4.svg",
+      status: false,
+    },
+    {
+      id: 3,
+      title: "Auto Despatch",
+      description:
+        "At Orijin, we're revolutionizing CPO loading with our cutting-edge RFID card system. Our all-in-one solution streamlines access control with RFID, passcodes, and tokens, ensuring secure and efficient loading. Safety and precision are paramount, with strategically placed sensors and emergency overrides to eliminate errors. Elevate your procedures, minimize downtime, and seamlessly integrate with our proven expertise.",
+      image1: "../portfolio/cpo-1.svg",
+      image2: "../portfolio/cpo-2.svg",
+      image3: "../portfolio/cpo-3.svg",
+      image4: "../portfolio/cpo-4.svg",
+      status: false,
     },
   ];
 
@@ -103,6 +116,15 @@ const Carousel = () => {
                   : "duration-500 ease-in-out opacity-100"
               } ${lato.className}`}
             >
+              <span
+                className={
+                  currentItem?.status
+                    ? "hidden"
+                    : "block font-bold text-[#212B31] mb-2"
+                }
+              >
+                ON GOING
+              </span>
               {currentItem.description}
             </p>
           </div>
@@ -175,7 +197,9 @@ const Carousel = () => {
             >
               <MdOutlineArrowBack className="w-[15px] h-[15px]" />
             </button>
-            <h1 className={`font-bold uppercase text-2xl ${rubik.className}`}>
+            <h1
+              className={`font-bold uppercase text-2xl text-center ${rubik.className}`}
+            >
               {currentItem.title}
             </h1>
             <button
@@ -186,7 +210,15 @@ const Carousel = () => {
             </button>
           </div>
         </div>
-
+        <span
+          className={
+            currentItem?.status
+              ? "hidden"
+              : "block font-bold text-[#212B31] mb-2"
+          }
+        >
+          ON GOING
+        </span>
         <div className="w-full  px-3">
           <div
             className={`text-black/50 flex items-center justify-center text-[13px] px-[18px] border-r border-l border-amber-600/20 text-center pt-[30px] pb-[75px] ${
