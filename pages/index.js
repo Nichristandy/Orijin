@@ -159,7 +159,7 @@ export default function Home() {
                   </div>
                 </div>
                 {/* mouse  */}
-                <div className=" md:w-5/12 md:px-12 md:pt-8">
+                <div className=" md:w-5/12 md:px-12 md:pb-7 md:pt-8">
                   <div className="flex flex-col items-center gap-6">
                     <h3
                       className={`uppercase font-bold text-center text-white ${rubik.className}`}
